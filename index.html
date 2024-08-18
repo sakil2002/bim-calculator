@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(82, 62, 62);
+      }
+      form {
+        background-color: rgb(104, 50, 77);
+        border: 1px groove whitesmoke;
+        border-radius: 7px;
+        box-shadow: 0px 0px 5px 0px rgb(3, 3, 3);
+      }
+      button {
+        color: white;
+        background-color: black;
+        margin: 10px;
+        border-radius: 10px;
+        border: 1px groove;
+        padding: 7px;
+        box-shadow: 0px 0px 10px 0px hotpink;
+      }
+      .button2 {
+        float: right;
+      }
+      h3,
+      h2,
+      p {
+        text-align: center;
+        color: rgb(205, 192, 204);
+      }
+      input[type="text"],
+      input[type="submit"] {
+        border-radius: 10px;
+        padding: 7px;
+        width: 150px;
+        margin: 10px;
+        background-color: rgb(113, 100, 100);
+        box-shadow: 0px 0px 5px 0px whitesmoke;
+        border: 1px groove hotpink;
+      }
+      .calculate {
+        width: 153px;
+        position: relative;
+        left: 56px;
+      }
+
+      .reset_button {
+        position: relative;
+        left: 58px;
+        color: white;
+        background-color: rgb(134, 8, 8);
+        width: 150px;
+        margin: 10px;
+        border-radius: 10px;
+        border: 1px groove;
+        padding: 10px;
+        box-shadow: 0px 0px 10px 0px hotpink;
+        transition: transform 0.2s;
+      }
+      .reset_button:hover {
+        transform: scale(1.1);
+      }
+      .result {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+        height: 30px;
+        box-shadow: 0px 0px 5px 0px hotpink;
+        background-color: rgb(8, 8, 8);
+        color: white;
+        border-radius: 7px;
+        border: 1px groove black;
+      }
+      .result2 {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+        height: 30px;
+        box-shadow: 0px 0px 5px 0px hotpink;
+        background-color: rgb(8, 8, 8);
+        color: white;
+        border-radius: 7px;
+        border: 1px groove black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <button class="button1">Home</button
+        ><button class="button2">Bmi Generator</button>
+      </header>
+      <hr />
+      <form action="">
+        <h2>BMI CALCULATOR</h2>
+        <p>Height in CM:<input type="text" id="height" /></p>
+        <p>Weight in KG:<input type="text" id="weight" /></p>
+        <p>
+          <button type="submit" class="calculate">CAlCULATE</button>
+        </p>
+        <div class="result" style="color: white"></div>
+        <div class="result2"></div>
+        <p><button type="reset" class="reset_button">RESET</button></p>
+        <div class="weightguide">
+          <h3>...BMI Weight Guide...</h3>
+          <p>Under Weight = Less than 18.6</p>
+          <p>Normal range= 18.6 and 24.9</p>
+          <p>OverWeight = Greater than 24.9</p>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
