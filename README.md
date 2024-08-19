@@ -1,6 +1,4 @@
 
----
-
 # BMI Checker 
 
 ## Project Overview
@@ -38,7 +36,3 @@ This project is a **Body Mass Index (BMI) Calculator** created using HTML, CSS, 
 ## Demo
 
 To see the project in action, clone the repository and open the `index.html` file in your browser.
-
----
-
-This README script gives a clear and concise overview of the project, making it easy for others to understand and use your BMI calculator.
